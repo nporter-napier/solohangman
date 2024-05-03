@@ -53,9 +53,9 @@ const gameEndedwin = () => {
 const matchWord = (val) => {
   const matches = [];
   console.log(word);
-  word.split("").forEach((el, index) => {
+  word.split("").forEach((el, hard_mode) => {
     if (el === val.toLowerCase()) {
-      matches.push(index);
+      matches.push(hard_mode);
     }
   });
 

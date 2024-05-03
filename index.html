@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solo Hangman Game</title>
     <link rel="stylesheet" href="style.css">
-    <!-- scripts for wordlist, form game mode and to close window -->
-    <script  src="wordlist.js"  defer></script>
-    <script src="script.js"  defer></script>
-    <script language="javascript" type="text/javascript">
+	<script language="javascript" type="text/javascript">
   	function exitGame() {
    	if (confirm("Are you sure you want to exit the Solo Hangman Game?")) {
 	window.open('','parent','');
@@ -17,53 +14,58 @@
 	}
   	}
 	</script>
+
 </head>
- <body>
+<body>
 
-    <div class="main">
-	
-      <div class="game">
-        <div class="left">
-          <img class="img" src="images/hangman-gallows.svg" />
-          <h1>SOLO HANGMAN GAME</h1>
-        </div>
-        <div class="right">
-	  <header>
-		<a href="home.html">
-		<button type="button">Go Home</button></a>
-		<button onclick="exitGame()">Exit Game</button>
 
- 		
-				
-        <h1>YOU ARE IN HARD MODE</h1>
- 	</header>
-	
-          <ul class="word-display"></ul>
-          <h4>
-            Hint:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Laborum, ipsum!
-          </h4>
-          <p>
-            Incorrect guesses:
-            <span class="chance" style="color: green">0/6</span>
-          </p>
-          <div class="keyboard"></div>
+    <header>
+        <div class="main">
+             <div class="game">
+		<div class="left"> 
+                
+                <img class="img" src="images/hangman-rightfoot.svg" />
+		<h1>SOLO HANGMAN GAME</h1>
+            	</div>
+           	<div class="right">
+		<header>
+                    <h2>Welcome to Solo Hangman Game!</h2>
+                </header>
+                <p>Your classic hangman game, a way to<br>
+                kill time. Choose Game Mode.<br></p>
+                <nav>
+                    <!--establishing game modes-->
+                       <div class ="button"> <a href="kids_mode.html">
+                            <button type="button">Kids</button>
+                        </a>
+                        <a href="easy_mode.html">
+                            <button type="button">Easy</button>
+                        </a>
+			<!--hard game mode-->
+                        <a href="hard_mode.html"> 
+                            <button type="button">Hard</button>
+                        </a>
+                   	</div>
+			<p>Need Help?<br>
+                	Choose a below option for help.<br></p>
+			 </a>
+			<!--Game Modes Help-->
+                        <a href="gamemodes.html"> 
+                            <button type="button">Game Modes Explained</button>
+                        </a>
+			</a>
+			<!--How to Play Help-->
+                        <a href="howto.html"> 
+                            <button type="button">How to Play Solo Hangman</button>
+                        </a>
+
+
+
+                </nav>
+                <input type="button" value="Exit Game" onclick="exitGame();">
+	    
+                </div>
         </div>
-      </div>
-      <div class="GameEnded">
-        <img class="gameendedImg" src="images/lose.gif" />
-        <h3>Game Over!</h3>
-        <h6>
-          The Correct Word Was:<span class="answer" style="color: green"
-            >Jazz</span
-          >
-        </h6>
-        <button onclick="location.reload()">PLAY AGAIN</button>
-      </div>
-	
-    </div>
- 	
+    </header>
 </body>
-
- </html>
-
+</html>
